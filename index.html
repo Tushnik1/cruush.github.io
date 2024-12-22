@@ -62,16 +62,39 @@
         transform-origin: center;
         transform: rotate(5deg) translateX(-50%);
     }
-    img , .dialog{
+    .img , .dialog{
         border-radius: 12px;
         width: 50%;
         height: 90%;;
     }
+    .img{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .img1{
+      background-image: url('IMG-20240419-WA0049.jpg');
+    }
+    .img2{
+      background-image: url('IMG-20240416-WA0003.jpg');
+    }
+    .img3{
+      background-image: url('IMG-20240324-WA0000.jpg');
+    }
+    .img4{
+      background-image: url('IMG_20240326_123939_829.jpg');
+    }
     .dialog{
-        width: 45%;
-        padding: auto;
-        color: black;
-        background-image: url('https://img.freepik.com/free-vector/wrinkles-white-crumples-paper-texture-background_1017-37526.jpg');
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      width: 45%;
+      padding: auto;
+      font-family: cursive;
+      font-weight: 500;
+      color: black;
+      background-image: url('https://img.freepik.com/free-vector/wrinkles-white-crumples-paper-texture-background_1017-37526.jpg');
     }
     .draggable-box:active {
       cursor: grabbing;
@@ -83,14 +106,14 @@
 <div id="loading">It is not <span class="cdate">23/12/2024</span> my wifey yet</div>
 
 <div id="content">
-  <div class="draggable-box" id="box1"><img src="IMG-20240419-WA0049.jpg" alt=""><div class="dialog">You are my sunshine</div></div>
-  <div class="draggable-box" id="box2"><img src="IMG-20240416-WA0003.jpg" alt=""><div class="dialog">You are my cutie pie</div></div>
-  <div class="draggable-box" id="box3"><img src="IMG-20240324-WA0000.jpg" alt=""><div class="dialog">You are my one and only cat</div></div>
-  <div class="draggable-box" id="box4"><img src="IMG_20240326_123939_829.jpg" alt=""><div class="dialog">You are my one and only cat</div></div>
+  <div class="draggable-box" id="box1"><div class="img img1"></div><div class="dialog">"No matter the highs or lows, I’ll stand by your side through it all. Even when the world feels heavy, you’ll never have to carry it alone. I’ll always be here, your unwavering anchor and safe haven. ❤️🤝✨"</div></div>
+  <div class="draggable-box" id="box2"><div class="img img2"></div><div class="dialog">"You’re the sweetest cutie pie, sprinkling joy everywhere you go! Life feels brighter and sweeter with you around. 🥧✨💖"</div></div>
+  <div class="draggable-box" id="box3"><div class="img img3"></div><div class="dialog">"You're the purr-fect companion, always curling up in the coziest corners of my heart. With every meow and playful paw, you make life endlessly adorable. 😺🐾❤️"</div></div>
+  <div class="draggable-box" id="box4"><div class="img img4"></div><div class="dialog">"Are you the sunshine? Because you just brightened up my entire world the moment you walked in. ☀️😉❤️"</div></div>
 </div>
 
 <script>
-  const targetDate = new Date('2024-12-22');
+  const targetDate = new Date('2024-12-23');
   const currentDate = new Date();
 
   const loadingElement = document.getElementById('loading');
